@@ -1,0 +1,25 @@
+Kontrollspørsmål Sigurd Tveit Kristoffersen LAB Innlevering 1
+
+0) Javascript er et lettvektig programmeringsspråk som implementeres i HTML sider. 
+Det brukes til å tilføre dynamiske elementer til nettsider. 3
+
+1) Forskjellen mellom CLASS ID og CLASS elementer er at class ID er en unik "identifier" til et element. 
+Den gir altså et element en egenskap, og kun dette elementet. Der en ID kun kan bli brukt en gang kan
+class elementer bli brukt flere ganger i koden din. 
+
+2) I deloppgave 0 lagde vi en liste som blir presentert på hele siden. Fordelen med dette er at det er lett å lese, 
+du trenger ikke trykke deg inn på noe, informasjonen blir presentert oversiktlig og greit. Hadde det derimot
+vært over 100 elementer hadde det blitt tungvindt å måtte scrolle nedover for å finne det du var ute etter. 
+Da er det enklere med en dropdown meny som du kan enkelt navigere deg nedover med. Fordelen med en dropdown meny
+er at det tar liten plass, og fungerer bedre der det er mange andre elementer på siden din. 
+
+3) Wikipedia bruker tabeller som de har gjort sorterbare. Foreksempel står alle programmeringsspråkene som begynner på "A"
+i en egen tabell der språkene er sortert alfabetisk i en uordnet rekkefølge. Øverst kan man trykke på en bokstav i en tabell
+som automatisk sender deg ned til tabellen til den bokstaven. Wikipedia har brukt JavaScript for å implementere
+dette i HTML. 
+
+4) <div> er en blokk element. Div burde brukes til å samle seksjoner av et dokument, mens span er et "inline" element, 
+som brukes til å samle små porsjoner av en tekst, bilder, osv. Span brukes altså når vi skal endre på noe inne imellom
+et større element. Det er ikke lov til å bruke <div> innenfor et <span> element. 
+
+5) 
