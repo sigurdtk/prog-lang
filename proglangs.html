@@ -10,7 +10,7 @@
 <html>
 <head>
  <meta charset="utf-8">
- <title>Programmeringsspråk (versjon 0.0.1)</title>
+ <title>Programmeringsspråk, hva er det?</title>
  
  <!-- Laste inn Javascript biblioteker her -->
  <!-- Fjern kommentarmerkene for å inkludere jquery biblioteket (sist hentet 23.08.2013) 
@@ -18,47 +18,20 @@
  -->
  
  <!-- Inkludere CSS her -->
- 
+ <link rel="stylesheet" href="proglangs.css" type="text/css" media="all" />
 </head>
+<ul class="navbar">
+ <li><a href="index.html">Hjem</a>
+  <li><a href="prolangs.js">Kronologisk</a>
+  <li><a href="prolangs.js">Hierarkisk</a>
+  <li><a href="prolangs.js">Alfabetisk</a>
+ </ul>
 <body>
-<link rel="stylesheet" href="proglangs.css" type="text/css" media="all" />
-<h1>Ulike programmeringsspråk</h1>
-<ul>
-<p class="first">ActionScript</p>
-<p class="second">AppleScript</p>
-<p class="third">Asp</p>
-<p class="first">Basic</p>
-<p class="second">C</p>
-<p class="third">c++<p class="second">
-<p class="second">Clojure<p class="second">
-<p class="first"><cobol>COBOL</p></li>
-<p class="third">ColdFusion</p>
-<p class="first">Erlang<p>
-<p class="second">Fortran</p>
-<p class="first">Groovy<groovy></li>
-<p class="third">Haskell<haskell></li>
-<p class="second">Java<java></li>
-<p class="third"><javascript>JavaScript<javascript></li>
-<p class="second"><lisp>Lisp<lisp></li>
-<p class="first"><perl>Perl<perl></li>
-<p class="third"><php>PHP<php></li>
-<p class="first"><python>Python<python></li>
-<p class="second"><ruby>Ruby<ruby></li>
-<p class="third"><scala>Scala<scala></li>
-<p class="first"><scheme>Scheme<scheme></li>
-</ul>
-
+<h1>Progammeringsspråk, hva er det?</h1>
 <form>
-<script type="text/javascript" scr="proglangs.js"></script>
-<script>
-function progSpråk()
-{
-var minliste=document.getElementById("minListe");
-document.getElementById("valg").value=minliste.options[minliste.selectedIndex].text;
-}
-</script> 
-Velg et programmeringsspråk:
-<select id="minListe" onchange="progSpråk()">
+Søk i programmeringsspråk:
+<label for="proglangs">Velg:</label>
+<select name="select-pl" id="proglangs" onChange="printToOutputBox(this)">
 <option value="actionscript">ActionScript</option>
 <option value="applescript">AppleScript</option>
 <option value="asp">Asp</option>
@@ -82,8 +55,8 @@ Velg et programmeringsspråk:
 <option value="scala">Scala</option>
 <option value="scheme">Schheme</option>
 </select>
-<p>Du valgte programmeringsspråket: <input type="text" id="valg" size="20"></p>
 </form>
-
+<span id="outputbox">Intet programmeringsspråk er selektert. Selekter et programmeringsspråk!</span>
+<script src="proglangs.js"></script>
 </body>
 </html>
