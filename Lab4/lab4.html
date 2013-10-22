@@ -1,0 +1,106 @@
+<html xmlns"http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+ <Title>LAB4 alfabetisk liste</title>
+                <link rel="stylesheet" href="lab4.css" type="text/css" media="all" />
+                <script src="js/jquery-1.8.1.js"></script>
+                <script src="js/jquery.scrollTo-1.4.7.js"></script>
+                <script>
+                $(function() {
+
+                        $(".firstUL li").each(function() {
+                                $( this ).click(function() {
+                                        $(".firstUL li").removeClass("selected");
+                                        $(this).addClass("selected");
+                                        elementClick = $( this ).attr("id");
+                                        
+
+                        $(".content-container").scrollTo($("#content-for-"+elementClick), 800);
+
+                        $(".content-container div").css({'background-color': '#DC143C'});
+                        $(".content-container #content-for-"+elementClick ).css({'background-color': '#d2e2fc'});
+
+                        $( '.return-to-top' ).click(function() {
+                        $( ".firstUL li" ).each(function() {
+                        $( ".firstUL li" ).removeClass( "selected" );
+                        });
+                        $( "#a" ).addClass ( "selected" );
+                        $( ".content-container" ).scrollTo($( "#content-for-a" ), 800);
+
+                        $(".content-container div").css({'background-color': '#ffffff'});
+                        $(".content-container #content-for-a").css({'background-color': '#d2e2fc'});
+                });
+
+                                });
+                        });
+                        });
+                
+
+
+ </script>
+ <body>
+                <div id="body-container">
+                <div class="glossary-container">
+                        <ul class="firstUL">
+                                <li id="a" class="selected">A</li>
+                                <li id="b">B</li>
+                                <li id="c">C</li>
+                                <li id="d">D</li>
+                                <li id="e">E</li>
+                        </ul>
+                </div>
+                
+                        <div class="content-container">
+                                <div ID="content-for-a" style="background-color:#d2e2fc">
+                                        <dl>
+                                                <dt> Actionscript </dt>
+                                                <dd>Actionscript er et programmeringsspårk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe flash Player-plattformen, Men også i noen databaseapplikasjoner og grunleggende robotikk. </dd>
+                                                <dt>Applescript </dt>
+                                                <dd>Applescript et er script-språk laget av Apple Inc. Det er innebygd i Macintosh operativsystemet siden System 7. </dd>
+                                        </dl>
+                                        <p class="return-to-top">Tilbake til toppen</p>
+                                </div>
+
+                                <div id="content-for-b">        
+                                        <dl>
+                                                <dt> Actionscript </dt>
+                                                <dd>Actionscript er et programmeringsspårk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe flash Player-plattformen, Men også i noen databaseapplikasjoner og grunleggende robotikk. </dd>
+                                                <dt>Applescript </dt>
+                                                <dd>Applescript et er script-språk laget av Apple Inc. Det er innebygd i Macintosh operativsystemet siden System 7. </dd>
+                                        </dl>
+                                        <p class="return-to-top">Tilbake til toppen</p>
+                                </div>
+                                <div id="content-for-c">
+                                        <dl>
+                                                <dt> Actionscript </dt>
+                                                <dd>Actionscript er et programmeringsspårk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe flash Player-plattformen, Men også i noen databaseapplikasjoner og grunleggende robotikk. </dd>
+                                                <dt>Applescript </dt>
+                                                <dd>Applescript et er script-språk laget av Apple Inc. Det er innebygd i Macintosh operativsystemet siden System 7. </dd>
+                                        </dl>
+                                        <p class="return-to-top">Tilbake til toppen</p>
+                                </div>
+                                <div id="content-for-d">
+                                        <dl>
+                                                <dt> Actionscript </dt>
+                                                <dd>Actionscript er et programmeringsspårk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe flash Player-plattformen, Men også i noen databaseapplikasjoner og grunleggende robotikk. </dd>
+                                                <dt>Applescript </dt>
+                                                <dd>Applescript et er script-språk laget av Apple Inc. Det er innebygd i Macintosh operativsystemet siden System 7. </dd>
+                                        </dl>
+                                        <p class="return-to-top">Tilbake til toppen</p>
+                                </div>
+                                <div id="content-for-e">
+                                        <dl>
+                                                <dt> Actionscript </dt>
+                                                <dd>Actionscript er et programmeringsspårk basert på ECMAScript som blir brukt primært til utvikling av nettsider og programvare for Adobe flash Player-plattformen, Men også i noen databaseapplikasjoner og grunleggende robotikk. </dd>
+                                                <dt>Applescript </dt>
+                                                <dd>Applescript et er script-språk laget av Apple Inc. Det er innebygd i Macintosh operativsystemet siden System 7. </dd>
+                                        </dl>
+                                        <p class="return-to-top">Tilbake til toppen</p>
+                                </div>
+                                </div>
+                                </div>
+</body>
+                        
+
+
+
+</html>
